@@ -1,0 +1,60 @@
+PROJECT LEAD *1 TIME*
+//Make base project including .gitignore using 
+git init
+git add .
+git commit -m "First Commit"
+git remote add origin <GITHUB LINK>
+git branch -M main
+git push -u origin main
+//Add Contributors
+
+    
+//ALL EXCEPT PROJECT LEAD *1 TIME*
+//Accept contriutor invite
+git clone <GITHU LINK>
+//Reconfirm .gitignore's location and contents
+cd <folder_name>
+
+
+ALL- *1 TIME*
+git checkout -b NAME_HERE (Change local branch to new one)
+git status
+git log
+git add
+git commit -m ""
+git push - u origin your_local_branch_name //same as NAME_HERE
+
+
+MAKE A PULL REQUEST - BETTER SAFE THAN SORRY EVEN IF THERE ISN'T A CONFLICT
+
+ONCE CHANGES ARE APPROVED AND MERGED , GO BACK TO MAIN/MASTER BRANCH ON YOUR MACHINE    
+
+
+//ALWAYS be mindful of who is working on what at any time, and what branch you are working on.
+//NEVER make changes to your local main branch!
+*ALL* - start of repeatin process <- - - - - - -
+
+*SKIP THIS BLOCK IF JUST CLONED/CREATED REPO*
+*DO THIS BLOCK BEFRE PUSHING*
+*DO THIS BLOCK AFTER EXTENDED BACK FROM CODING*
+git checkout main(or master)
+
+
+NOW PULL LATEST CHANGES FROM REMOTE REPOSITORY:
+git pull origin main (or master)
+
+FROM HERE YOU CAN EITHER: A) go back to your branch from before , OR B) delete you old branch nd start a new one
+
+
+### Option A
+
+GO BACK TO YOUR BRANCH
+git checkout your_branch_name_from_befre // Notice there's no "-b" HERE
+
+BY GOING BACK TO YOUR OLD BRANCH, YOU MUST BRING THE LATEST STUFF IN:
+git merge main(or master)
+git push -u origin <your_branch_name_from_befre> 
+
+###Option B
+If you choose to delete your branch, you can do the following:
+git branch -d branch_to_delete
